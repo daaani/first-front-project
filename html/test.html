@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sidebar">
+        <h1><a href="#">
+            <img src="./images/insta.png" alt="인스타그램 로고" height="75px"></a>
+        </h1><!--instagram logo-->
+            <nav class="menu">
+                <div class="menu_wrap">
+                <ul>
+                    <li class="menu-item">
+                        <a href="#" class="menu-btn">
+                            <img src="./images/homepage.png" alt="홈" height="35px" class="menu-icon">
+                            <div class="name">홈</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-btn">
+                            <img src="./images/search.png" alt="홈" height="35px" class="menu-icon">
+                            <div class="name">검색</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-btn">
+                            <img src="./images/compass.png" alt="홈" height="35px" class="menu-icon">
+                            <div class="name">탐색 탭</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-btn">
+                            <img src="./images/media.png" alt="홈" height="35px" class="menu-icon">
+                            <div class="name">릴스</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-btn">
+                            <img src="./images/send.png" alt="홈" height="35px" class="menu-icon">
+                            <div class="name">메세지</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-btn">
+                            <img src="./images/heart.png" alt="홈" height="35px" class="menu-icon">
+                            <div 알림 class="name">알림</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-btn">
+                            <img src="./images/more.png" alt="홈" height="35px" class="menu-icon">
+                            <div class="name">만들기</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-btn">
+                            <img src="./images/user.png" alt="홈" height="35px" class="menu-icon">
+                            <div class="name">프로필</div>
+                        </a>
+                    </li>
+                </ul>
+                </div><!--home_wrap-->
+                <div class="footer">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="#" class="menu-btn">
+                                <img src="./images/email.png" alt="홈" height="35px" class="menu-icon">
+                                <div class="name">Threads</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-btn">
+                                <img src="./images/menu.png" alt="홈" height="35px" class="menu-icon">
+                                <div class="name">더 보기</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--footer-->
+            </nav>
+    </header><!--side bar-->
+</body>
+</html>
+
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Noto Sans KR", sans-serif;
+  color:black;
+}
+.sidebar {
+    position:absolute;
+    /*position:absolute/relative*/
+    flex-direction: column;
+    font-size:14px;
+    width: 250px;
+    height:100%;
+    padding-left:12px;
+    padding-right:12px;
+    padding-bottom:20px;
+    padding-top:10px;
+}
+h1 {
+height:90px;
+width:220px;
+padding-top:7px;
+padding-left:6px;
+padding-right:12px;
+padding-bottom:16px;
+margin-bottom: 5px;
+}
+.menu{
+    height:calc(100% - 120px);
+    /*calc*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav li a {
+    font-size: 18px;
+  text-decoration: none;
+}
+.menu-item{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.menu-btn{
+    display: flex;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+.menu-icon{
+    margin-left: 5px;
+    height:35px;
+}
+.name{
+    /* height:100%; */
+    margin-left: 10px;
+}
+.footer{
+    width:220px;
+}
+</style>
